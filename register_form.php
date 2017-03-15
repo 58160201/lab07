@@ -9,16 +9,17 @@
     ชื่อ-นามสกุล : <br>
     <input type="text" class="text" name="name" id="name" ><br>
     อีเมล์ : <br>
-    <input type="text" class="text" name="name" id="email" ><br>
-    เพศ : <br>
-    <input type="radio" class"radio" name"sex" id="sex" value="M">ชาย
-    <input type="radio" class"radio" name"sex" id="sex" value="F">หญิง<br>
+    <input type="text" class="text" name="email" id="email" ><br>
+    เพศ: <br />
+    <input type="radio" class="radio" name="sex" id="sex" value="M" /> ชาย
+    <input type="radio" class="radio" name="sex" id="sex" value="F" /> หญิง 
+    <br/>
     ความสนใจ :<br>
     <input type="checkbox" class"checkbox" name"intr1" id="intr1"> เรียน
     <input type="checkbox" class"checkbox" name"intr2" id="intr2"> เกมส์
     <br>
     ที่อยู่ :<br>
-    <texttarea class="text" name="address" id="address" rows="4" cols="50"></textarea>
+    <textarea class="text" name="address" id="address" rows="4" cols="50"></textarea>
     <br>
     จังหวัด<br>
     <select name="province" id="province">
@@ -29,7 +30,7 @@
     <br><br>
     <input type="submit" id="submit" value="Submit" name="submit">
     </form>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"</script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script>
     $('#submit').on('click', function(event){
         var valid = true,
