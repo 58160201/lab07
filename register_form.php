@@ -30,30 +30,31 @@
 <br/><br/>
 <input type="submit" id="submit" value="Submit" name="submit" />
 </form>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script>
-    $('#submit').on('click', function(event){
-        var valid = true,
-        errorMessage = "";
-        if($('#name').val()==''){
-            errorMessage = "โปรดป้อนชื่อ-นามสกุล \n";
-            valid = false;
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+$('#submit').on('click', function ( event ) {
+    var valid = true,
+    errorMessage ="";
 
-        }
-        if($('#address').val()==''){
-            errorMessage = "โปรดป้อนที่อยู่ \n";
-            valid = false;
-        }
-         if($('#email').val()==''){
-            errorMessage = "โปรดป้อน email \n";
-            valid = false;
-        }
-        if(!valid && erroeMessage.length > 0){
-            alert(errorMessage);
-            event.preventDefault();
-        }
-      }  );
-      </script>
-      </body>
-      </html>
+
+    if ($('#name').val() == '') {
+        errorMessage = "โปรดป้อนชื่อ-นามสกุล \n";
+        valid = false;
+}
+   if($('#address').val() == ''){
+       errorMessage += "โปรดป้อนที่อยู่\n";
+       valid = false;
+   }
+   if($('#email').val() ==''){
+       errorMessage += "โปรดป้อน email\n";
+       valid = false;
+   }
+   if( !valid && errorMessage.length > 0){
+       alert(errorMessage);
+       event.preventDefault();
+   }
+});
+</script>
+</body>
+</html>
     
