@@ -9,13 +9,9 @@
 ชื่อ-นามสกุล: <br/>
 <input type="text" class="text" name="name" id="name" /> <br/>
 อีเมล์: <br/>
-<input type="text" class="text" name="email" id="email" /> <br/>
-<?php $email = "someone@exa mple.com";
-if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-echo "E-mail is not valid";
-} else {
-echo "E-mail is valid";
-} ?>
+<input type="email" class="email" name="email" id="email" /> <br/>
+
+<br />
 เพศ: <br />
 <input type="radio" class="radio" name="sex" id="sex" value="M" /> ชาย
 <input type="radio" class="radio" name="sex" id="sex" value="F" /> หญิง 
