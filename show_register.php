@@ -8,11 +8,12 @@ $result = $conn->query($query);
 
 <html>
 <head>
-<title>Register</title>
+<title>show_register</title>
 <meta charset="UTF-8">
 
 </head>
 <body>
+<h3>รายชื่อผู้ลงทะเบียน</h3>
 <table align=center border=1>
 <tr>
 <td align=center>#</td>
@@ -39,7 +40,7 @@ $result->close();
 </table><br>
 
     <center><button type="button"><a href="http://angsila.cs.buu.ac.th/~58160201/887371/lab07/register_form.php">
-		Register_form
+		ลงทะเบียน
 	</a></button>
     
 </body>

@@ -7,7 +7,7 @@ $result = $conn->query($query);
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Form Validation</title>
+<title>register_form</title>
 </head>
 <body>
 <h3>แบบฟอร์มลงทะเบียน</h3>
@@ -19,12 +19,12 @@ $result = $conn->query($query);
 
 <br />
 เพศ: <br />
-<input type="radio" class="radio" name="sex" id="sex" value="M" /> ชาย
-<input type="radio" class="radio" name="sex" id="sex" value="F" /> หญิง 
+<input type="radio" class="radio" name="sex" id="sex" value="ชาย" /> ชาย
+<input type="radio" class="radio" name="sex" id="sex" value="หญิง" /> หญิง 
 <br/>
 ความสนใจ: <br/>
-<input type="checkbox" class="checkbox" name="intr1" id="intr1" /> เรียน
-<input type="checkbox" class="checkbox" name="intr2" id="intr2" /> เกมส์
+<input type="checkbox" class="checkbox" name="intr1" id="intr1" value="เรียน" /> เรียน
+<input type="checkbox" class="checkbox" name="intr2" id="intr2"  value="เกมส์"/> เกมส์
 <br />
 ที่อยู่: <br/>
 <textarea class="text" name="address" id="address" row="4" cols="50" ></textarea>
@@ -78,8 +78,11 @@ $('#submit').on('click', function ( event ) {
    }
 });
 </script>
-<br><br><button type="button"><a href="erd.jpg">
+<br><br><button type="button"><a href="img/erd.png">
 		ER Diagram
+    </a></button>
+    <button type="button"><a href="http://angsila.cs.buu.ac.th/~58160201/887371/lab07/show_register.php">
+            show_register
 	</a></button><br><br>
     <button type="button"><a href="https://github.com/58160201/lab07/blob/master/dopost.php">
 		Source code : dopost.php
