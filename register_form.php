@@ -10,7 +10,7 @@ $result = $conn->query($query);
 <title>register_form</title>
 </head>
 <body>
-<h3>แบบฟอร์มลงทะเบียน</h3>
+<center><h3>แบบฟอร์มลงทะเบียน</h3></center>
 <form action="dopost.php" method="post" class="a">
 ชื่อ-นามสกุล: <br/>
 <input type="text" class="text" name="name" id="name" /> <br/>

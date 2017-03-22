@@ -13,11 +13,11 @@ $result = $conn->query($query);
 
 </head>
 <body>
-<h3>รายชื่อผู้ลงทะเบียน</h3>
+<center><h3>รายชื่อผู้ลงทะเบียน</h3></center>
 <table align=center border=1>
 <tr>
 <td align=center>#</td>
-<td align=center>ชื่อ</td>
+<td align=center>ชื่อ-นามสกุล</td>
 <td align=center>อีเมล</td>
 <td align=center>เพศ</td>
 <td align=center>ความสนใจ</td>
