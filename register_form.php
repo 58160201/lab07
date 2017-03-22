@@ -1,3 +1,9 @@
+<?php 
+include("db.php");
+//select data
+$query ="SELECT * FROM provinces";
+$result = $conn->query($query);
+?>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -26,8 +32,9 @@
 จังหวัด: <br />
 <select name="province" id="province">
 <option value="">---เลือกจังหวัด---</option>
-<option value="1">กรุงเทพมหานคร</option>
-<option value="2">ชลบุรี</option>
+<?php while($row = $result->fetch_array()) { ?>
+ <option value="<?php echo $row['PROVINCE_ID']; ?>"> <?php echo $row['PROVINCE_NAME']; ?></option>
+<?php } ?>
 </select><br />
 <br/><br/>
 <input type="submit" id="submit" value="Submit" name="submit" />
@@ -60,7 +67,7 @@ $('#submit').on('click', function ( event ) {
         errorMessage += "โปรดเลือกความสนใจ \n";
        valid = false;
    }
-   if($('#sex').prop('checked')==false && $('#sex').prop('checked')==false){
+   if($('#sex').prop('checked')==false && $('#sex').prop('checked')){
         errorMessage += "โปรดเลือกเพศ \n";
        valid = false;
    }
@@ -71,6 +78,18 @@ $('#submit').on('click', function ( event ) {
    }
 });
 </script>
+<br><br><button type="button"><a href="erd.jpg">
+		ER Diagram
+	</a></button><br><br>
+    <button type="button"><a href="https://github.com/somkidgame/lab07/blob/master/dopost.php">
+		Source code : dopost.php
+	</a></button>
+    <button type="button"><a href="https://github.com/somkidgame/lab07/blob/master/register_form.php">
+		Source code : register_form.php
+	</a></button>
+    <button type="button"><a href="https://github.com/somkidgame/lab07/blob/master/show_register.php">
+		Source code : show_register.php
+	</a></button>
 </body>
 </html>
     
