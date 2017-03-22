@@ -31,9 +31,13 @@ if ($conn->query($sql) === TRUE) {
 <title></title>
 </head>
 <body>
-
+<br>
     <button type="button"><a href="http://angsila.cs.buu.ac.th/~58160201/887371/lab07/show_register.php">
 		Show_register
+	</a></button>
+    <br>
+    <button type="button"><a href="http://angsila.cs.buu.ac.th/~58160201/887371/lab07/register_form.php">
+		Register_form
 	</a></button>
     </body>
     </html>
