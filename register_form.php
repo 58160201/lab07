@@ -55,6 +55,18 @@ $('#submit').on('click', function ( event ) {
        alert(errorMessage);
        event.preventDefault();
    }
+   if($('#province').val()==''){
+        errorMessage += "โปรดเลือกจังหวัด \n";
+       valid = false;
+   }
+    if($('#checkbox').val()==''){
+        errorMessage += "โปรดเลือกความสนใจ \n";
+       valid = false;
+   }
+   if($('#radio').val()==''){
+        errorMessage += "โปรดเลือกเพศ \n";
+       valid = false;
+   }
 });
 </script>
 </body>
