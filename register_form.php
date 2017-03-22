@@ -51,21 +51,23 @@ $('#submit').on('click', function ( event ) {
        errorMessage += "โปรดป้อน email\n";
        valid = false;
    }
-   if( !valid && errorMessage.length > 0){
-       alert(errorMessage);
-       event.preventDefault();
-   }
+
    if($('#province').val()==''){
         errorMessage += "โปรดเลือกจังหวัด \n";
        valid = false;
    }
-    if($('#checkbox').val()==''){
+    if($('#intr1').prop('checked')==false && $('#intr2').prop('checked')==false) {
         errorMessage += "โปรดเลือกความสนใจ \n";
        valid = false;
    }
-   if($('#radio').val()==''){
+   if($('#sex').prop('checked')==false && $('#sex').prop('checked')==false){
         errorMessage += "โปรดเลือกเพศ \n";
        valid = false;
+   }
+
+   if( !valid && errorMessage.length > 0){
+       alert(errorMessage);
+       event.preventDefault();
    }
 });
 </script>
